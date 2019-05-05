@@ -1,7 +1,7 @@
 FROM openjdk:11
 
 RUN apt-get update && \
-    apt-get install build-essential && \
+    apt-get install -y build-essential && \
     curl -L https://cpanmin.us | perl - --sudo App::cpanminus
 
 RUN git clone https://github.com/rjust/defects4j.git /defects4j
