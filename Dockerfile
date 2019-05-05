@@ -1,4 +1,4 @@
-FROM openjdk:8
+FROM openjdk:7-jdk-jessie
 
 RUN apt-get update && \
     apt-get install -y build-essential && \
